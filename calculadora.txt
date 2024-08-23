@@ -1,0 +1,114 @@
+#include <stdio.h>
+
+    
+int soma(){
+    
+    int num1, num2, result; 
+    printf("Digite seu primeiro numero:");
+    scanf("%d", &num1);
+    printf( "Digite seu segundo numero:" );
+    scanf("%d", &num2);
+    
+    result= num1 + num2;
+    
+    printf("Seu resultado eh: %d\n", result);
+}
+    
+int subtracao(){
+    
+    int num1, num2, result;
+   
+    printf("Digite seu primeiro numero: \n");
+    scanf("%d", &num1);
+    printf( "Digite seu segundo numero:" );
+    scanf("%d", &num2);
+    
+    result= num1 - num2;
+    
+    printf("Seu resultado eh: %d\n", result);
+    
+}
+int tabuada(){
+
+    int numero;
+    printf("Digite o numero para verificar a tabuada: ");
+    scanf("%d", &numero);
+    
+    printf("a tabuada do numero %d: \n ", numero);
+    for (int i = 1; i <=10; i++){
+     printf("%d * %d = %d\n", numero, i, numero * i);
+     
+    }
+    
+int divisao(){
+     
+     double n, n2, resultDivisao;
+     
+     printf("Digite o primeiro número: ");
+     scanf("%lf", &n);
+     
+     printf("Digite o segundo número: ");
+     scanf("%lf", &n2);
+     
+     resultDivisao = n / n2;
+     
+     printf("O resultado da divisão é: %2.lf\n", resultDivisao);
+   }
+     
+
+int valor1, valor2, i, potencia;
+
+printf("Digite o valor de valor1: ");
+scanf("%d", &valor1);
+
+printf("Digite o valor de valor2: ");
+scanf("%d", &valor2);
+
+i = 1;
+potencia = 1;
+while (i <= valor2) {
+potencia *= valor1;
+
+i++;
+
+}
+
+printf("O valor da potencia é %d\n", potencia);
+
+     
+ }    
+    
+    int main()
+{   
+    
+    double numero1 , numero2, resultado;
+    char operador;
+    printf("Digite o primeiro numero:");
+    scanf("%lf", &numero1);
+    printf("Digite um numero:");
+     scanf("%lf", &numero2);
+     printf("Escolha o operador (+, -,*, /):");
+     scanf(" %c", &operador);
+     switch (operador) {
+         case '+':
+         resultado = numero1+ numero2;
+         break;
+         case'-':
+         resultado = numero1-numero2;
+         break;
+         case '*':
+         resultado = numero1* numero2;
+         break;
+         case'/':
+         resultado = numero1/numero2;
+         break;
+         
+         default: 
+         printf("insira uma operacao valida");
+    } 
+          printf("resultado%.2lf\n", resultado);
+    
+    return 0;
+    }
+
+
